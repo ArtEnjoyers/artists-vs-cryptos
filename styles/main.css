@@ -1,9 +1,11 @@
+/*
 colors {
-	blue: #1d4db9,
-	violeta: #4520bd,
-	blavet: #0aaaaa,
+	blue: #1d4db9
+	violeta: #4520bd
+	blavet: #0aaaaa
 	altre: #1d4db9
 }
+*/
 
 body {
 	background-color: #69ffff;
@@ -70,3 +72,71 @@ button.menu-object:hover:not(:active){
 	height: 85px;
 	
 }
+
+/* LOGO */
+#logoJoc {
+	display:block;
+	margin:auto;
+}
+
+.moneda {
+	stroke:gold;
+	fill:yellow;
+	stroke-width:4;
+}
+
+.sombraMoneda {
+	stroke:rgb(202, 172,0);
+	stroke-width:4;
+}
+
+.sombra {
+	stroke:rgb(202, 172,0);
+	stroke-width:4;
+}
+
+.lletra {
+	stroke:rgb(255,217,0);
+	stroke-width:4;
+}
+
+.lletraC {
+	stroke:rgb(255,217,0);
+	stroke-width:6;
+}
+
+#logoJoc:hover .moneda {
+	stroke:#4520bd;
+	fill: #0aaaaa;
+	stroke-width:5;
+}
+
+#logoJoc:hover .sombraMoneda {
+	stroke:rgb(41, 3, 255);
+	stroke-width:5;
+}
+
+#logoJoc:hover .sombra {
+	stroke:rgb(255, 255, 255);
+	stroke-width:5;
+}
+
+#logoJoc:hover .lletra {
+	stroke:rgb(41, 3, 255);
+	stroke-width:5;
+}
+
+#logoJoc:hover .lletraC {
+	stroke:rgba(20, 200, 0, 0.751);
+	stroke-width:6;
+}
+
+#logoJoc:hover {
+    filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));     
+    animation:change 2s infinite linear alternate;
+}
+@keyframes change {
+to {
+    background-position:right;
+}
+  }
