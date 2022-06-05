@@ -101,7 +101,7 @@ Game.Art.prototype.shoot = function() {
     var newElement = this.bullets.getFirstDead();
 
     if(!newElement) {
-        newElement = new Game.Bullet(this, this.x, y);
+        newElement = new Game.Bullet(this, this.x - 15, y);
         this.bullets.add(newElement);
     }
     else {
