@@ -121,6 +121,8 @@ createGui: function() {
     this.buttonData.forEach(function(element, index) {
         button = new Phaser.Button(this.game, 80 + index * 40, this.game.height - 35, element.btnAsset, this.clickButton, this);
         this.buttons.add(button);
+        button.scale.setTo(0.3);
+        
 
         //passar les dades al botó
         button.ArtData = element;

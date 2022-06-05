@@ -35,51 +35,51 @@
     },
     {
       "time": 7,
-      "asset": "chicken",
+      "asset": "amongusPink",
       "health": 3,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
-      "velocity": -20
+      "velocity": -25
     },
     {
       "time": 7.1,
-      "asset": "chicken",
+     "asset": "amongusPink",
       "health": 3,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
-      "velocity": -20
+      "velocity": -25
     },
     {
       "time": 7.2,
-      "asset": "chicken",
+     "asset": "amongusPink",
       "health": 3,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
-      "velocity": -20
+      "velocity": -25
     },
     {
       "time": 7.3,
-      "asset": "chicken",
+     "asset": "amongusPink",
       "health": 3,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
-      "velocity": -20
+      "velocity": -25
     },
     {
       "time": 7.4,
-      "asset": "chicken",
+     "asset": "amongusPink",
       "health": 3,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
-      "velocity": -20
+      "velocity": -25
     },
     {
       "time": 7.5,
-      "asset": "chicken",
+     "asset": "amongusPink",
       "health": 3,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
-      "velocity": -20
+      "velocity": -25
     },
     {
       "time": 12,

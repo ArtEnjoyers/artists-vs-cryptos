@@ -9,6 +9,12 @@ Game.Art = function(state, x, y, data) {
   this.suns = state.suns;
 
   this.anchor.setTo(0.5);
+  if (data.artAsset == 'ola' ){
+    this.scale.setTo(0.1);
+  }
+  if (data.artAsset == "girasol"){
+      this.scale.setTo(0.05);
+  }
 
   //iniciar les fisiques del cos
   this.game.physics.arcade.enable(this);
@@ -26,16 +32,21 @@ Game.Art.prototype.constructor = Game.Art;
 
 Game.Art.prototype.reset = function(x, y, data){
   Phaser.Sprite.prototype.reset.call(this, x, y, data.health);
+  if (data.artAsset == 'ola'){
+    this.x = this.x + 10;
+    this.y = this.y + 10;
+  }
 
   //cambiar l'imatge de l'Art
   this.loadTexture(data.artAsset);
 
-  this.animationName = null;
+  /*this.animationName = null;
   if(data.animationFrames) {
     this.animationName = data.artAsset + 'Anim';
     this.animations.add(this.animationName, data.animationFrames, 6, false);
     this.play(this.animationName);
   }
+  */
 
   this.isShooter = data.isShooter;
   this.isSunProducer = data.isSunProducer;

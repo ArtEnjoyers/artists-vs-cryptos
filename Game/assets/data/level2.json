@@ -3,73 +3,73 @@
   "enemys": [
     {
       "time": 1,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 1.1,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 2,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 3,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -10
     },
     {
       "time": 4,
-      "asset": "chicken",
+     "asset": "amongusPink",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
-      "velocity": -20
+      "velocity": -25
     },
     {
       "time": 5,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 5.1,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 5.2,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 6,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     }

@@ -1,30 +1,29 @@
 [
   {
-    "btnAsset": "sunflowerButton",
+    "btnAsset": "girasolButton",
     "cost": 75,
-    "artAsset": "sunflower",
+    "artAsset": "girasol",
     "health": 4,
     "isSunProducer": true
   },
   {
-    "btnAsset": "sunflowerButton",
+    "btnAsset": "girasolButton",
     "cost": 125,
-    "artAsset": "sunflower",
+    "artAsset": "girasol",
     "health": 20,
     "isSunProducer": true
   },
   {
-    "btnAsset": "artButton",
+    "btnAsset": "olaButton",
     "cost": 100,
-    "artAsset": "art",
+    "artAsset": "ola",
     "health": 10,
-    "isShooter": true,
-    "animationFrames": [1, 2, 1, 0]
+    "isShooter": true
   },
   {
     "btnAsset": "chiliButton",
     "cost": 200,
-    "artAsset": "chili",
+    "artAsset": "grito",
     "health": 25,
     "isShooter": true
   }

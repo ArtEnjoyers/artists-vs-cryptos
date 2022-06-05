@@ -6,8 +6,11 @@ Game.enemy = function(state, x, y, data) {
   this.state = state;
   this.game = state.game;
   this.anchor.setTo(0.5);
+
   if (data.asset == "amongus"){
     this.scale.setTo(0.4);
+  } else if (data.asset == "amongusPink"){
+    this.scale.setTo(0.2);
   }
 
   //cridar fisiques
@@ -49,9 +52,17 @@ Game.enemy.prototype.damage = function(amount) {
     emitter.maxParticleSpeed.setTo(100, 100);
     emitter.gravity = 300;
     emitter.start(true, 200, null, 100);
-
     if(this.health <= 0) {
-        var corpse = this.game.add.sprite(this.x, this.bottom, 'deadZombie');
-        corpse.anchor.setTo(0.5, 1);
+      if(this.key == "amongus"){
+        var corpse;
+        corpse = this.game.add.sprite(this.x, this.bottom, 'blackDead');
+        corpse.anchor.setTo(1, 0.5);
+        corpse.scale.setTo(0.4);
+      }else if (this.key == "amongusPink"){
+        var corpse;
+        corpse = this.game.add.sprite(this.x, this.bottom, 'pinkDead');
+        corpse.anchor.setTo(1, 0.5);
+        corpse.scale.setTo(0.2);
+      }
     }
 };
