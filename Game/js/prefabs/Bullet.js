@@ -1,7 +1,9 @@
 var Game = Game || {};
 
 Game.Bullet = function(state, x, y) {
-    Phaser.Sprite.call(this, state.game, x, y, 'bullet');
+    Phaser.Sprite.call(this, state.game, x, y, 'wave');
+    this.scale.setTo(0.05);
+    this.y = this.y - 10;
 
     this.state = state;
     this.game = state.game;

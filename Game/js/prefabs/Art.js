@@ -97,7 +97,7 @@ Game.Art.prototype.shoot = function() {
     }
 
     //lloc de la bala y
-    var y = this.y - 10;
+    var y = this.y - 15;
     var newElement = this.bullets.getFirstDead();
 
     if(!newElement) {
