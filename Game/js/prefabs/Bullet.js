@@ -14,7 +14,7 @@ Game.Bullet.prototype = Object.create(Phaser.Sprite.prototype);
 Game.Bullet.prototype.construtor = Game.Bullet;
 
 Game.Bullet.prototype.update = function() {
-    //kill bullets that leave the screen
+    //Matar la bala al sortir de la pantalla
     if(this.x >= this.game.width) {
         this.kill();
     }

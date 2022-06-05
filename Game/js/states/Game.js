@@ -10,7 +10,7 @@ Game.GameState = {
     Cinquena fila: 224
     */
   init: function(currentLevel) {
-    //keep track of the current level
+    //mirar el nivell actual
     this.currentLevel = currentLevel ? currentLevel : 'level1';
 
     //constants
@@ -19,7 +19,7 @@ Game.GameState = {
     this.SUN_VELOCITY = 50;
     this.ENEMY_FREQUENCY = 1;
 
-    //no gravity in a top-down game
+    //no hi ha gravetat y
     this.game.physics.arcade.gravity.y = 0;
   },
   create: function() {
@@ -30,7 +30,7 @@ Game.GameState = {
 
     this.enemyCount = 0;
     
-    //group for game objects
+    //grup dels objectes de la classe
     this.bullets = this.add.group();
     this.Arts = this.add.group();
     this.enemys = this.add.group();
@@ -59,10 +59,10 @@ Game.GameState = {
     }    
 
     this.enemys.forEachAlive(function(enemy){
-      //enemys need to keep their speed
+      //enemics necessiten mantenir la velocitat
       enemy.body.velocity.x = enemy.defaultVelocity;
         
-      //if one of them reaches the house, it's game over
+      //si arriben al final, s'acaba el joc
       if(enemy.x <= this.HOUSE_X) {
         this.gameOver();
       }
@@ -74,7 +74,7 @@ Game.GameState = {
   attackArt: function(Art, enemy) {
     Art.damage(enemy.attack);
 },
-createenemy: function(x, y, data) {
+createEnemy: function(x, y, data) {
     var newElement = this.enemys.getFirstDead();
 
     if(!newElement) {
@@ -101,19 +101,20 @@ createArt: function(x, y, data) {
     return newElement;
 },
 createGui: function() {
-    var sun = this.add.sprite(10, this.game.height - 20, 'sun');
+    var sun = this.add.sprite(10, this.game.height - 20, 'energia');
     sun.anchor.setTo(0.5);
-    sun.scale.setTo(0.5);
+    sun.scale.setTo(0.05);
 
     var style = {font: '14px Arial', fill: '#fff'};
     this.sunLabel = this.add.text(22, this.game.height - 28, '', style);
 
+    //Fer un update del label, sino no surtiria be
     this.updateStats();
 
-    //show button bar
+    //ensenyar button 
     this.buttonData = JSON.parse(this.game.cache.getText('buttonData'));
 
-    //buttons
+    //grup dels botons
     this.buttons = this.add.group();
 
     var button;
@@ -121,7 +122,7 @@ createGui: function() {
         button = new Phaser.Button(this.game, 80 + index * 40, this.game.height - 35, element.btnAsset, this.clickButton, this);
         this.buttons.add(button);
 
-        //pass the data to the button
+        //passar les dades al botó
         button.ArtData = element;
     }, this);
 
@@ -186,9 +187,10 @@ generateRandomEnemy: function(){
     }
     var enemyData;
 
+    //L'enemic correspon al seguent de la llista del Json
     enemyData = this.levelData.enemys[this.enemyCount];
 
-    var enemy = this.createenemy(x,y,enemyData);
+    var enemy = this.createEnemy(x,y,enemyData);
 },
 createSun: function(x, y) {
     var newElement = this.suns.getFirstDead();
@@ -215,7 +217,7 @@ clickButton: function(button) {
         button.selected = true;
         button.alpha = 0.5;
 
-        //check if you can afford the Art
+        //Mirar si pots comprar l'Art
         if(this.numSuns >= button.ArtData.cost) {
             this.ArtLabel.fill = "white";
 
@@ -241,10 +243,11 @@ clearSelection: function() {
         button.selected = false;
     }, this);
 },
+//Crear botons per poder clickar i colocar unitats
 createLandPatches: function() {
     this.patches = this.add.group();
 
-    //rectangle to be used
+    //Rectangles per clickar
     var rectangle = this.add.bitmapData(40, 50);
     rectangle.ctx.fillStyle = '#000';
     rectangle.ctx.fillRect(0, 0, 40, 50);
@@ -263,12 +266,13 @@ createLandPatches: function() {
             patch.posX = 64 + i * 40;
             patch.posY = 24 + j * 50;
 
-            //Art something if the patch is available and a Art is selected
+            //Colocar una unitat si has seleccionat un lloc
             patch.inputEnabled = true;
             patch.events.onInputDown.add(this.paintArt, this);
         }
     }
 },
+//Colocar unitats
 paintArt: function(patch) {
     if (this.currentSelection != null && this.numSuns >= this.currentCost){
         this.createArt(patch.posX,patch.posY,this.currentSelection);

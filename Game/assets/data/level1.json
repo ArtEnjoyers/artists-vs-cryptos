@@ -3,33 +3,33 @@
   "enemys": [
     {
       "time": 1,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 1.1,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 4,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 5,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -10
     },
@@ -83,33 +83,33 @@
     },
     {
       "time": 12,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 14,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 17,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     },
     {
       "time": 18,
-      "asset": "enemy",
+      "asset": "amongus",
       "health": 10,
-      "animationFrames": [0, 1, 2, 1],
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
       "attack": 0.1,
       "velocity": -20
     }

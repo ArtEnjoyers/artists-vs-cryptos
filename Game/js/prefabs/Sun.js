@@ -1,18 +1,21 @@
 var Game = Game || {};
 
 Game.Sun = function(state, x, y) {
-    Phaser.Sprite.call(this, state.game, x, y, 'sun');
+    Phaser.Sprite.call(this, state.game, x, y, 'energia');
 
     this.state = state;
     this.game = state.game;
 
     this.game.physics.arcade.enable(this);
 
-    this.animations.add('shine', [0,1], 10, true);
-    this.play('shine');
+    //this.animations.add('shine', [0,1], 10, true);
+    //this.play('shine');
 
     this.anchor.setTo(0.5);
+    this.scale.setTo(0.05);
 
+
+    //Al clickar al sol, es mata i et sumen punts
     this.inputEnabled = true;
     this.input.pixelPerfectClick = true;
 

@@ -6,8 +6,11 @@ Game.enemy = function(state, x, y, data) {
   this.state = state;
   this.game = state.game;
   this.anchor.setTo(0.5);
+  if (data.asset == "amongus"){
+    this.scale.setTo(0.4);
+  }
 
-  //enable physics
+  //cridar fisiques
   this.game.physics.arcade.enable(this);
 
   this.reset(x, y, data);
@@ -19,18 +22,18 @@ Game.enemy.prototype.constructor = Game.enemy;
 Game.enemy.prototype.reset = function(x, y, data) {
   Phaser.Sprite.prototype.reset.call(this, x, y, data.health);
 
-  //change the image of the Art
+  //canviar l'imatge de l'enemic
   this.loadTexture(data.asset);
 
-  //create an animation if any was passed
+  //crear una animacio si en te alguna 
   this.animationName = null;
   if(data.animationFrames) {
     this.animationName = data.asset + 'Anim';
-    this.animations.add(this.animationName, data.animationFrames, 4, true);
+    this.animations.add(this.animationName, data.animationFrames, 6, true);
     this.play(this.animationName);
   }
 
-  //save properties
+  //guardar propietats
   this.attack = data.attack;
   this.defaultVelocity = data.velocity;
   this.body.velocity.x = data.velocity;

@@ -10,11 +10,11 @@ Game.Art = function(state, x, y, data) {
 
   this.anchor.setTo(0.5);
 
-  //init physics body
+  //iniciar les fisiques del cos
   this.game.physics.arcade.enable(this);
   this.body.immovable = true;
 
-  //create timers
+  //crear timers
   this.shootingTimer = this.game.time.create(false);
   this.producingTimer = this.game.time.create(false);
 
@@ -27,7 +27,7 @@ Game.Art.prototype.constructor = Game.Art;
 Game.Art.prototype.reset = function(x, y, data){
   Phaser.Sprite.prototype.reset.call(this, x, y, data.health);
 
-  //change the image of the Art
+  //cambiar l'imatge de l'Art
   this.loadTexture(data.artAsset);
 
   this.animationName = null;
@@ -61,24 +61,24 @@ Game.Art.prototype.kill = function() {
 Game.Art.prototype.scheduleShooting = function() {
     this.shoot();
 
-    //Arts shoot once per second
+    //Arts dispara una vegada per segon
     this.shootingTimer.add(Phaser.Timer.SECOND, this.scheduleShooting, this);
 };
 
 Game.Art.prototype.scheduleProduction = function() {
     this.produceSun();
 
-    //Arts shoot once per second
+    //Arts crea sun una vegada per 5 segons
     this.producingTimer.add(Phaser.Timer.SECOND * 5, this.scheduleProduction, this);
 };
 
 Game.Art.prototype.shoot = function() {
-    //play shooting animation
+    //animacio disparar
     if(this.animations.getAnimation(this.animationName)) {
         this.play(this.animationName);
     }
 
-    //location y of the bullet
+    //lloc de la bala y
     var y = this.y - 10;
     var newElement = this.bullets.getFirstDead();
 

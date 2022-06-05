@@ -1,6 +1,7 @@
 var Game = Game || {};
 
 Game.BootState = {
+    //Escalar la pantalla a la actual i començar les fisiques
     init: function() {
         this.game.stage.backgroundColor = '#fff';
 
