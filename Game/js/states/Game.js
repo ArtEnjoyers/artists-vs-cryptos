@@ -35,8 +35,7 @@ Game.GameState = {
     this.Arts = this.add.group();
     this.enemys = this.add.group();
     this.suns = this.add.group();
-    
-    
+
     this.numSuns = 10000;
 
     this.levelData = JSON.parse(this.game.cache.getText(this.currentLevel));
@@ -56,8 +55,7 @@ Game.GameState = {
     this.game.physics.arcade.collide(this.bullets, this.enemys, this.hitenemy, null, this);
 
     if(this.enemyCount == this.levelData.enemys.length ){
-        //this.state.add('Game', {currentLevel: this.levelData.nextLevel})
-        this.state.start('Game', {currentLevel: 'level2'});
+        this.state.start('Game', {currentLevel: this.levelData.nextLevel});
     }    
 
     this.enemys.forEachAlive(function(enemy){
