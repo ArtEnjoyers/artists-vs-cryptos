@@ -1,0 +1,77 @@
+{
+  "nextLevel": "level1",
+  "enemys": [
+    {
+      "time": 1,
+      "asset": "amongus",
+      "health": 10,
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
+      "attack": 0.1,
+      "velocity": -20
+    },
+    {
+      "time": 1.1,
+      "asset": "amongus",
+      "health": 10,
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
+      "attack": 0.1,
+      "velocity": -20
+    },
+    {
+      "time": 2,
+      "asset": "amongus",
+      "health": 10,
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
+      "attack": 0.1,
+      "velocity": -20
+    },
+    {
+      "time": 3,
+      "asset": "amongus",
+      "health": 10,
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
+      "attack": 0.1,
+      "velocity": -10
+    },
+    {
+      "time": 4,
+     "asset": "amongusPink",
+      "health": 10,
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
+      "attack": 0.1,
+      "velocity": -25
+    },
+    {
+      "time": 5,
+      "asset": "amongus",
+      "health": 10,
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
+      "attack": 0.1,
+      "velocity": -20
+    },
+    {
+      "time": 5.1,
+      "asset": "amongus",
+      "health": 10,
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
+      "attack": 0.1,
+      "velocity": -20
+    },
+    {
+      "time": 5.2,
+      "asset": "amongus",
+      "health": 10,
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
+      "attack": 0.1,
+      "velocity": -20
+    },
+    {
+      "time": 6,
+      "asset": "amongus",
+      "health": 10,
+      "animationFrames": [0, 1, 1, 2, 2, 1 ,1 , 0],
+      "attack": 0.1,
+      "velocity": -20
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "btnAsset": "girasolButton",
+    "cost": 75,
+    "artAsset": "girasol",
+    "health": 4,
+    "isSunProducer": true
+  },
+  {
+    "btnAsset": "girasolButton",
+    "cost": 125,
+    "artAsset": "girasol",
+    "health": 20,
+    "isSunProducer": true
+  },
+  {
+    "btnAsset": "olaButton",
+    "cost": 100,
+    "artAsset": "ola",
+    "health": 10,
+    "isShooter": true
+  },
+  {
+    "btnAsset": "gritoButton",
+    "cost": 200,
+    "artAsset": "grito",
+    "health": 25,
+    "isShooter": true
+  }
+]

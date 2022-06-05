@@ -1,5 +1,5 @@
 function inicia_joc(){
-	loadpage("./html/joc.html");
+	loadpage("./Game/game.html");
 }
 
 function carrega_joc (){
