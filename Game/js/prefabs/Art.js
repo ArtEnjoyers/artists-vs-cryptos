@@ -15,6 +15,9 @@ Game.Art = function(state, x, y, data) {
   if (data.artAsset == "girasol"){
       this.scale.setTo(0.05);
   }
+  if (data.artAsset == "grito"){
+    this.scale.setTo(0.1);
+}
 
   //iniciar les fisiques del cos
   this.game.physics.arcade.enable(this);
@@ -33,6 +36,10 @@ Game.Art.prototype.constructor = Game.Art;
 Game.Art.prototype.reset = function(x, y, data){
   Phaser.Sprite.prototype.reset.call(this, x, y, data.health);
   if (data.artAsset == 'ola'){
+    this.x = this.x + 10;
+    this.y = this.y + 10;
+  }
+  if (data.artAsset == 'grito'){
     this.x = this.x + 10;
     this.y = this.y + 10;
   }

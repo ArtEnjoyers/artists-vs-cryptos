@@ -17,10 +17,12 @@ Game.PreloadState = {
         this.load.image('artButton', 'assets/images/button_plant.png');
         this.load.image('olaButton', 'assets/images/ola_boton.png');
         this.load.image('girasolButton', 'assets/images/girasoles_boton.png');
+        this.load.image('gritoButton', 'assets/images/grito_boton.png');
 
 
         this.load.image('bloodParticle', 'assets/images/blood.png');
         this.load.image('bullet', 'assets/images/bullet.png');
+        this.load.image('wave', 'assets/images/wave.png');
         this.load.image('sunflower', 'assets/images/sunflower.png');
         this.load.image('chili', 'assets/images/chilli.png');
         this.load.image('deadZombie', 'assets/images/dead_zombie.png');

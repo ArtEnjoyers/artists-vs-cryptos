@@ -21,7 +21,7 @@
     "isShooter": true
   },
   {
-    "btnAsset": "chiliButton",
+    "btnAsset": "gritoButton",
     "cost": 200,
     "artAsset": "grito",
     "health": 25,
