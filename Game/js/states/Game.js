@@ -54,7 +54,7 @@ Game.GameState = {
     this.game.physics.arcade.collide(this.Arts, this.enemys, this.attackArt, null, this);
     this.game.physics.arcade.collide(this.bullets, this.enemys, this.hitenemy, null, this);
 
-    if(this.enemyCount == this.levelData.enemys.length ){
+    if(this.enemyCount == this.levelData.enemys.length + 20 ){
         this.state.start('Game', {currentLevel: this.levelData.nextLevel});
     }    
 
@@ -137,15 +137,16 @@ increaseSun: function(amount) {
 //Cada x temps es genera un sol i es torna a cridar a la mateixa funcio
 scheduleSunGeneration: function() {
     this.sunGenerationTimer.add(Phaser.Timer.SECOND * this.SUN_FREQUENCY, function() {
-        if(this.enemyCount <= this.levelData.enemys.length - 1)
-            this.generateRandomSun();
+        this.generateRandomSun();
         this.scheduleSunGeneration();
     }, this);
 },
 //Cada x temps es genera un enemic i es torna a cridar a la mateixa funcio
 scheduleEnemyGeneration: function(){
     this.enemyGenerationTimer.add(Phaser.Timer.SECOND * this.ENEMY_FREQUENCY, function(){
-        this.generateRandomEnemy();
+        if(this.enemyCount <= this.levelData.enemys.length - 1)
+            this.generateRandomEnemy();
+        this.enemyCount ++;
         this.scheduleEnemyGeneration();
     }, this);
 },
@@ -186,7 +187,6 @@ generateRandomEnemy: function(){
     var enemyData;
 
     enemyData = this.levelData.enemys[this.enemyCount];
-    this.enemyCount ++;
 
     var enemy = this.createenemy(x,y,enemyData);
 },
